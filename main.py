@@ -9,10 +9,10 @@ students_upper = students.upper()
 y = students_upper.count(" ")
 
 
-nums = "1, 2, 7, 6, 9, 8, 7"
+nums = "1, 2, 6, 9, 8, 77"
 
-user_num_1 = "x"
-user_num_2 = "3"
+user_num_1 = "7"
+user_num_2 = "7"
 
 n_user_num_1 = nums.count(user_num_1)
 n_user_num_2 = nums.count(user_num_2)
@@ -21,9 +21,12 @@ n_user_num_2 = nums.count(user_num_2)
 "if n_user_num == 1"
 "if n_user_num_2 == 1"
 
-if n_user_num_1 == 1 and n_user_num_2 == 1: # -> False
-    print("El usuario ha ganado!")
+if n_user_num_1 >= 1 and n_user_num_2 >= 1: # -> False
+    print("1: El usuario ha ganado!")
 elif user_num_1 == "x":
-    print("El usuario ha ganado!")
+    print("2: El usuario ha ganado!")
+elif user_num_1 == "y":
+    print("Algo sucede")
 else:
-    print("El usuario ha perdido...")
+    print("3: El usuario ha perdido...")
+print("Fin")
