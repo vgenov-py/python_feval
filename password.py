@@ -22,7 +22,7 @@ Validador de contraseñas
 #     print("La contraseña no tiene espacios")
 nums = [1, 2, 3, 3, 5]
 
-nums[0] # -> 1
+nums[0] # -> 1 
 nums[-1] # -> 5
 nums[0:3] # -> 1,2,3
 nums.append(6)
@@ -35,6 +35,11 @@ result = 0
 for num in nums:
     result = result + num # result += num
 
+for i, num in enumerate(nums):
+    if i % 2 == 0:
+        result = result + num # result += num
+
+
 
 repeated_numbers = [2,2,10,11,13,2,8,9,16,26,50,51,56,89,150,2,3,6,7,67,98, 1]
 
@@ -44,6 +49,18 @@ repeated_numbers = [2,2,10,11,13,2,8,9,16,26,50,51,56,89,150,2,3,6,7,67,98, 1]
 result = 0
 for num in repeated_numbers:
     result += num
+"""
+for (int i = 0; i < sizeof(nums)) {
+    //cosas
+    i = i + 2
+}  
+"""
+num = 0
+i = 0
+
+while i < len(nums):
+    num = nums[i]
+    i += 2
 
 # print(result/len(repeated_numbers))
 
@@ -56,11 +73,13 @@ repeated_numbers[max_num_index] = 1000
 
 
 nums = [1,3,2,4]
-
+print(result)
 def avg(sample):
     sample = sample.copy()
-    return sum(sample)/len(sample)
+    result = sum(sample)/len(sample)
+    return result
 
 nums_avg = avg(nums)
 print(nums_avg)
 print(nums)
+print(result)
